@@ -1,10 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header{
-    margin-top: 100px;
     height: 50px;
     width: 100vw;
     border: solid 1px;
@@ -35,6 +35,30 @@ header{
 #pres{
     margin-top: 10vh;
     width: 100vw;
-    height: 70vh;
-    background-color: grey;
+    height: 90vh;
+    background-color: rgb(193, 193, 193);
+    display: flex;
+    justify-content: space-between;
 }
+
+#pres div img{
+    height: 100%;
+
+}
+
+#journal{
+    margin-top: 2%;
+    margin-right: 5%;
+    background-color: blue;
+    height: 70%;
+    width: 20%;
+    transform: skewY(-30deg);
+}
+
+#img{
+    height: 50%;
+    width: 70%;
+    background-color: antiquewhite;
+}
+
+@keyframes
