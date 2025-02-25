@@ -47,12 +47,24 @@ header{
 }
 
 #journal{
-    margin-top: 2%;
-    margin-right: 5%;
+    position: absolute;
+top: 25%;
+
     background-color: blue;
     height: 70%;
     width: 20%;
     transform: skewY(-30deg);
+    right: 0;
+}
+
+.journal_back{
+    position: absolute;
+    top: 25%;
+    width: 20%;
+    height: 70%;
+    right: 25%;
+    background-color: red;
+    display: none;
 }
 
 #img{
@@ -61,4 +73,46 @@ header{
     background-color: antiquewhite;
 }
 
-@keyframes
+.anim_journal_open{
+    position: absolute;
+    animation: open_delivery_day forwards 2s ease-in-out;
+}
+
+@keyframes open_delivery_day{
+    0%{
+        right: 0%;
+    }
+    25%{
+        right: 25%;
+        transform: skewY(0deg);
+    }
+    37.5%{
+        transform: rotateY(90deg);
+        right: 35%;
+    }
+    75.5%{
+        transform: rotateY(180deg);
+        right: 45%;
+    }
+}
+
+@keyframes close_delivery_day{
+    0%{
+        transform: rotateY(180deg);
+        right: 45%;
+
+    }
+    25%{
+        transform: rotateY(90deg);
+        right: 35%;
+
+    }
+    37.5%{
+        right: 25%;
+        transform: skewY(0deg);
+    }
+    75.5%{
+
+        right: 0%;
+    }
+}
