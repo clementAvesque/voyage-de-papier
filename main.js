@@ -5,9 +5,11 @@ let first_step = (timer / 100) * 25
 let second_step = (timer/100) *37.4
 
 journal.addEventListener('click', () => {
-    journal.classList.toggle("anim_journal_open")
-    if (document.getElementsByClassName("anim_journal_open")) {
-
+    let status_journal = journal.classList.toggle("anim_journal_open")
+    console.log(status_journal)
+    
+    if (status_journal === true) {
+        
         
         setTimeout(() => {
             journal_back.style.display = "block"
@@ -20,15 +22,22 @@ journal.addEventListener('click', () => {
 
 
         },second_step)
-    } else {
+    }
 
-        console.log(first_step)
+    if(status_journal === false) {
+        journal.classList.add("anim_journal_close")
         setTimeout(() => {
-            journal_back.style.display = "block"
-            journal.style.right = "43%"
-            journal.style.transform = "skewY(0deg)"
-            journal.style.transform = "rotateY(180deg)"
-        }, first_step)
+            journal_back.style.display = "none"
+            journal.style.right = "0"
+            journal.style.transform = "skewY(-30deg)"
+        }, second_step)
+            setTimeout(()=>{
+            journal.style.backgroundImage = `url("img/image4.png")`
+
+
+        },first_step)
+
+
 
 
     }

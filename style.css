@@ -120,11 +120,14 @@ header {
     display: none;
 }
 
-
+.anim_journal_close {
+    position: absolute;
+    animation: close_delivery_day 2s ease-in-out;
+}
 
 .anim_journal_open {
     position: absolute;
-    animation: open_delivery_day forwards 2s ease-in-out;
+    animation: open_delivery_day 2s ease-in-out;
 }
 
 #personnalisation{
@@ -178,8 +181,8 @@ header {
         transform: skewY(0deg);
     }
 
-    75.5% {
-
+    100% {
+        transform: skewY(-30deg);
         right: 0%;
     }
 }
