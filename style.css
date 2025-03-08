@@ -1,10 +1,62 @@
-body{
+
+.biorhyme {
+    font-family: "BioRhyme", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-header{
+#textuel{
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#text1{
+    margin: 0;
+    font-size: 80pt;
+    font-weight: bold;
+    font-family: biorhyme;
+}
+
+#text2{
+    margin: 0;
+    font-size: 48pt;
+    font-weight: bold;
+    font-family: biorhyme;
+    width: 400%;
+}
+#text3{
+    margin: 0;
+    font-size: 48pt;
+    font-weight: 800;
+    font-family: biorhyme;
+    width: 150%;
+}
+
+
+h2{
+    justify-self: center;
+    font-size: 30pt;
+}
+
+header {
     height: 50px;
     width: 100vw;
     border: solid 1px;
@@ -13,27 +65,27 @@ header{
     justify-content: space-between;
 }
 
-.header_list{
+.header_list {
 
     width: 40vw;
 }
 
-.header_list ul{
+.header_list ul {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
 }
 
-#name{
+#name {
     font-size: 20pt;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#pres{
-    margin-top: 10vh;
+#pres {
+    margin-top: 5vh;
     width: 100vw;
     height: 90vh;
     background-color: rgb(193, 193, 193);
@@ -41,25 +93,26 @@ header{
     justify-content: space-between;
 }
 
-#pres div img{
+#pres div img {
     height: 100%;
 
 }
 
-#journal{
+#journal {
     position: absolute;
-top: 25%;
+    top: 18%;
 
-    background-color: blue;
+    background-image:url("img/image4.png");
+    background-size: cover;
     height: 70%;
     width: 20%;
     transform: skewY(-30deg);
     right: 0;
 }
 
-.journal_back{
+.journal_back {
     position: absolute;
-    top: 25%;
+    top: 18%;
     width: 20%;
     height: 70%;
     right: 25%;
@@ -67,51 +120,65 @@ top: 25%;
     display: none;
 }
 
-#img{
-    height: 50%;
-    width: 70%;
-    background-color: antiquewhite;
-}
 
-.anim_journal_open{
+
+.anim_journal_open {
     position: absolute;
     animation: open_delivery_day forwards 2s ease-in-out;
 }
 
-@keyframes open_delivery_day{
-    0%{
+#personnalisation{
+    width: 100vw;
+    height: 50vh;
+}
+
+
+@keyframes open_delivery_day {
+    0% {
         right: 0%;
     }
-    25%{
+
+    25% {
         right: 25%;
         transform: skewY(0deg);
     }
-    37.5%{
+
+    37.4% {
+        background-image: url("img/image4.png");
+    }
+
+    37.5% {
+        background-image:url("img/illustration_img.jpg") ;
+        background-color: green;
         transform: rotateY(90deg);
         right: 35%;
     }
-    75.5%{
+
+    75.5% {
         transform: rotateY(180deg);
         right: 45%;
     }
 }
 
-@keyframes close_delivery_day{
-    0%{
+@keyframes close_delivery_day {
+    0% {
         transform: rotateY(180deg);
         right: 45%;
 
     }
-    25%{
+
+    25% {
         transform: rotateY(90deg);
         right: 35%;
 
     }
-    37.5%{
+
+    37.5% {
         right: 25%;
         transform: skewY(0deg);
     }
-    75.5%{
+
+    75.5% {
 
         right: 0%;
     }
