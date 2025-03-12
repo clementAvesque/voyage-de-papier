@@ -1,0 +1,230 @@
+.biorhyme {
+    font-family: "BioRhyme", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#textuel {
+    padding-left: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#text1 {
+    margin: 0;
+    font-size: 80pt;
+    font-weight: bold;
+    font-family: biorhyme;
+}
+
+#text2 {
+    margin: 0;
+    font-size: 48pt;
+    font-weight: bold;
+    font-family: biorhyme;
+}
+
+#text3 {
+    width: 100vw;
+    margin: 0;
+    font-size: 48pt;
+    font-weight: 800;
+    font-family: biorhyme;
+}
+
+
+h2 {
+    justify-self: center;
+    font-size: 30pt;
+}
+
+header {
+    height: 50px;
+    width: 100vw;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_list {
+
+    width: 40vw;
+}
+
+.header_list ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#name {
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pres {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(193, 193, 193);
+    display: flex;
+    justify-content: space-between;
+}
+
+#pres div img {
+    height: 100%;
+
+}
+
+#journal {
+    position: absolute;
+    top: 18%;
+
+    background-image: url("img/image4.png");
+    background-size: cover;
+    height: 70%;
+    width: 20%;
+    transform: skewY(-30deg);
+    right: 0;
+}
+
+#personnalisation {
+    width: 100vw;
+    height: 50vh;
+}
+
+
+.journal_back {
+    position: absolute;
+    top: 18%;
+    width: 20%;
+    height: 70%;
+    right: 25%;
+    background-color: red;
+    display: none;
+}
+
+.anim_journal_close {
+    position: absolute;
+    animation: close_delivery_day 2s ease-in-out;
+}
+
+.anim_journal_open {
+    position: absolute;
+    animation: open_delivery_day 2s ease-in-out;
+}
+
+.anim_journal_open {
+    position: absolute;
+    animation: open_delivery_day 2s ease-in-out;
+}
+
+.text_out {
+
+    position: absolute;
+    animation: text_out 2s ease-in-out;
+
+}
+
+.text_in {
+
+    position: absolute;
+    animation: text_in 2s ease-in-out;
+
+}
+
+
+
+@keyframes open_delivery_day {
+    0% {
+        right: 0%;
+    }
+
+    25% {
+        right: 25%;
+        transform: skewY(0deg);
+    }
+
+    37.4% {
+        background-image: url("img/image4.png");
+    }
+
+    37.5% {
+        background-image: url("img/illustration_img.jpg");
+        background-color: green;
+        transform: rotateY(90deg);
+        right: 35%;
+    }
+
+    75.5% {
+        transform: rotateY(180deg);
+        right: 45%;
+    }
+}
+
+@keyframes close_delivery_day {
+    0% {
+        transform: rotateY(180deg);
+        right: 45%;
+
+    }
+
+    25% {
+        transform: rotateY(90deg);
+        right: 35%;
+
+    }
+
+    37.5% {
+        right: 25%;
+        transform: skewY(0deg);
+    }
+
+    100% {
+        transform: skewY(-30deg);
+        right: 0%;
+    }
+}
+
+@keyframes text_out {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -200%;
+    }
+
+}
+
+@keyframes text_in{
+
+
+    0% {
+        left: -200%;
+    }
+    
+    100% {
+        left: 0;
+    }
+}
