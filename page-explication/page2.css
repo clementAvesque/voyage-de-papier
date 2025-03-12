@@ -51,6 +51,7 @@ main {
 
 
 .content {
+    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -97,7 +98,7 @@ main {
 }
 
 footer {
-    height: 50px;
+    height: 100px;
     width: 100vw;
     border: solid 1px;
     display: flex;
