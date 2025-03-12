@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyages de papier</title>
+    <link rel="stylesheet" href="PageAchat.css">
+</head>
+<body>
+    <header>
+        <div class="header_list">
+            <ul>
+                <li>Acceuil</li>
+                <li>Votre journal</li>
+            </ul>
+        </div>
+        <p id="name">Voyage de papier</p>
+        <div class="header_list">
+            <ul>
+                <li>Notre équipe</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="preview">
+            <button class="prev"><img src="images/fleche-gauche.svg" alt="fleche-gauche" /></button>
+            <div class="journal">
+                <img src="images/proto-journal.svg" alt="exemple article" />
+                </div>
+            </div>
+            <button class="next"><img src="images/fleche-droite.svg" alt="fleche-droite" /></button>
+        </section>
+        <section class="customization">
+            <h2>Ajouter ...</h2>
+            <label for="date">Date :</label>
+            <select id="date">
+                <option>Sélectionner une option...</option>
+            </select>
+            <label for="theme">Thème :</label>
+            <select id="theme">
+                <option>Sélectionner une option...</option>
+            </select>
+            <h3>Ajouter votre personnalisation</h3>
+            <label for="text">Texte :</label>
+            <textarea id="text" placeholder="Écrire..."></textarea>
+            <label for="photo">Photo :</label>
+            <div class="photo-upload">+</div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </section>
+    </main>
+</body>
+</html>

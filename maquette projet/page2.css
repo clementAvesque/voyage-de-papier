@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    height: 50px;
+    width: 100vw;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_list {
+    width: 40vw;
+}
+
+.header_list ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.themes_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.txt-selection{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 40%;
+}
+
+.content .description {
+    width: 55%;
+}
+
+.years button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.years button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.create-journal {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-journal:hover {
+    background-color: #444;
+}
+
+footer {
+    height: 50px;
+    width: 100vw;
+    border: solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_list {
+    width: 40vw;
+}
+
+.footer_list ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
