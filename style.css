@@ -11,7 +11,7 @@
     font-family: "Chonburi", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 
 body {
@@ -52,12 +52,34 @@ body {
 
 .ViewSlider{
     width: 100vw;
-    margin-top: -1%;
+    margin: -5vh;
 
 }
 
+
+section a button{
+    margin-top: 10vh;
+    height: 55px;
+    width: 350px;
+    font-family: Chonburi;
+    font-size: 32pt;
+    border: none;
+    border-radius: 20px;
+    background-color: grey;
+}
+
+#theme img{
+    margin-top: 50px;
+    background-color: white;
+    margin: 3%;
+}
+
+#theme{
+    height: 200px;
+}
+
 .Slider{
-    height: 100%;
+
     width: auto;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -72,6 +94,10 @@ body {
     font-size: 48pt;
     font-weight: 600;
     font-family: biorhyme;
+}
+
+#Theme{
+    margin-top: 5%;
 }
 
 ::-webkit-scrollbar {

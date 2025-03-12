@@ -1,9 +1,31 @@
 const journal = document.getElementById("journal");
 const journal_back = document.getElementsByClassName("journal_back")[0];
 const textuel = document.getElementById("textuel")
+const theme = document.getElementById("theme")
 let timer = 2000
 let first_step = (timer / 100) * 25
 let second_step = (timer / 100) * 37.4
+const list_theme = [
+    { NameOfThem: "art", link_img: "img/theme/art.svg" },
+    { NameOfThem: "automobile", link_img: "img/theme/automobile.svg" },
+    { NameOfThem: "celebrite", link_img: "img/theme/celebrite.svg" },
+    { NameOfThem: "cinema", link_img: "img/theme/cinema.svg" },
+    { NameOfThem: "fait divers", link_img: "img/theme/fait_divers.svg" },
+    { NameOfThem: "gastronomie", link_img: "img/theme/gastronomie.svg" },
+    { NameOfThem: "mode", link_img: "img/theme/mode.svg" },
+    { NameOfThem: "monde entreprenariat", link_img: "img/theme/monde-entreprenariat.svg" },
+    { NameOfThem: "nouveauté numerique", link_img: "img/theme/nouveauté_numerique.svg" },
+    { NameOfThem: "voyage", link_img: "img/theme/voyage.svg" }
+];
+
+localStorage.setItem("list_theme", JSON.stringify(list_theme));
+
+for(let i = 0; i<list_theme.length;i++){
+let img = document.createElement("img")
+img.src = list_theme[i].link_img
+img.alt = list_theme[i].NameOfThem
+theme.appendChild(img)
+}
 
 journal.addEventListener('click', () => {
     let status_journal = journal.classList.toggle("anim_journal_open")
@@ -53,3 +75,5 @@ journal.addEventListener('click', () => {
     }
 
 });
+
+
