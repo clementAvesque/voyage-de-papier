@@ -7,6 +7,12 @@
         "wdth" 100;
 }
 
+.chonburi-regular {
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 
 body {
     margin: 0;
@@ -14,7 +20,25 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
+}
+
+#explication{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#explication h3{
+    font-size: 32pt;
+    font-family: BioRhyme;
+}
+
+#explication p{
+    font-family: biorhyme;
+    font-size: 16pt;
+    width: 95%;
 }
 
 #textuel {
@@ -24,6 +48,51 @@ body {
     flex-direction: column;
     justify-content: center;
 
+}
+
+.ViewSlider{
+    width: 100vw;
+    margin-top: -1%;
+
+}
+
+.Slider{
+    height: 100%;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    font-size: 48pt;
+    font-weight: 600;
+    font-family: biorhyme;
+
+}
+#explication .Slider p{
+    font-size: 48pt;
+    font-weight: 600;
+    font-family: biorhyme;
+}
+
+::-webkit-scrollbar {
+    width: 0; 
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    border: none; 
+}
+
+::-webkit-scrollbar-track {
+
+    border-radius: 0;
+}
+
+.Slider p{
+    font-weight: 600;
+    font-size: 48px;
+    
+    margin: 3%;
 }
 
 #text1 {
@@ -110,7 +179,59 @@ header {
 
 #personnalisation {
     width: 100vw;
-    height: 50vh;
+}
+
+section h2{
+    margin-top: 5%;
+    width: 100vw;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    text-align: center;
+    font-family: BioRhyme;
+}
+
+section #page{
+    width: 95vw;
+    height: 90vh;
+
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+#page div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#page div button{
+
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 314px;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    font-size: 24pt;
+    font-family: Chonburi;
+    margin-top: 5vh;
+}
+
+section div img{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(184, 184, 184);
+    
+}
+
+section div #desc{
+    margin-top: 2vh;
+    width: 100%;
+    font-weight: 600;
+    font-size: 16pt;
+    font-family: BioRhyme;
 }
 
 
@@ -163,6 +284,7 @@ header {
     25% {
         right: 25%;
         transform: skewY(0deg);
+        filter: brightness(1);
     }
 
     37.4% {
@@ -174,11 +296,13 @@ header {
         background-color: green;
         transform: rotateY(90deg);
         right: 35%;
+        filter: brightness(0.8);
     }
 
     75.5% {
         transform: rotateY(180deg);
         right: 45%;
+        filter: brightness(1);
     }
 }
 
@@ -186,23 +310,28 @@ header {
     0% {
         transform: rotateY(180deg);
         right: 45%;
+        filter: brightness(1);
 
     }
 
     25% {
         transform: rotateY(90deg);
         right: 35%;
+        filter: brightness(0.8);
 
     }
 
     37.5% {
+
         right: 25%;
         transform: skewY(0deg);
+        filter: brightness(1);
     }
 
     100% {
         transform: skewY(-30deg);
         right: 0%;
+        
     }
 }
 

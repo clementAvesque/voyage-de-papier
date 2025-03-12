@@ -21,6 +21,7 @@ journal.addEventListener('click', () => {
         setTimeout(() => {
             journal.style.backgroundImage = `url("img/illustration_img.jpg")`
             textuel.style.display = "none"
+            textuel.style.position = "absolute"
             textuel.classList.remove("text_out")
 
 
