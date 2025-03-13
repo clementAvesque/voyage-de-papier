@@ -50,12 +50,11 @@ body {
 
 }
 
-.ViewSlider{
-    width: 100vw;
-    margin: -5vh;
 
+
+img{
+    background-color: transparent;
 }
-
 
 section a button{
     margin-top: 10vh;
@@ -69,14 +68,26 @@ section a button{
     background-color: grey;
 }
 
+.Slider img{
+    background-color: transparent;
+}
+
+
+.avis_client{
+    margin-top: 10%;
+    height: 100px;
+    width: 70%;
+    font-size: 8pt;
+}
+
 #theme img{
     margin-top: 50px;
-    background-color: white;
     margin: 3%;
 }
 
 #theme{
     height: 200px;
+    width: 100vw;
 }
 
 .Slider{
@@ -95,6 +106,43 @@ section a button{
     font-size: 48pt;
     font-weight: 600;
     font-family: biorhyme;
+}
+
+
+
+.ViewSlider #comm{
+    height: 100%;
+}
+
+.cards{
+    height: 40vh;
+    margin: 3vw;
+    width: 20vw;
+    background-color: grey;
+    border-radius: 30pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.note{
+    height: 20px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.note img{
+    height: 100%;
+    background-color: transparent;
+}
+
+.pdp{
+    margin: 50px;
+    height: 10vh;
+    width: 10vh;
+    background-color: blue;
+    border-radius: 50%;
 }
 
 #Theme{
@@ -120,6 +168,11 @@ section a button{
     font-size: 48px;
     
     margin: 3%;
+}
+
+.Slider .avis_client{
+    font-size: 10pt;
+    text-align: justify;
 }
 
 #text1 {
@@ -262,10 +315,13 @@ section div #desc{
 }
 
 #commentaire{
-    height: 80vh;
+    height: 60vh;
     border-bottom: solid 1px;
     border-top: solid 1px;
-    width: 100vw;
+    overflow-x: scroll;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .journal_back {
