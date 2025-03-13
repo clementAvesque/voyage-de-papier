@@ -90,6 +90,11 @@ section a button{
     width: 100vw;
 }
 
+.note img{
+    height: 100%;
+    width: auto;
+}
+
 .Slider{
 
     width: auto;
@@ -138,7 +143,7 @@ section a button{
 }
 
 .pdp{
-    margin: 50px;
+    margin: 30px;
     height: 10vh;
     width: 10vh;
     background-color: blue;

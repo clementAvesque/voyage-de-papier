@@ -22,7 +22,7 @@ const list_theme = [
 
 
 function card(pdp, avis, note) {
-  console.log("test")
+
   //création de la card-------//
   let card = document.createElement("div")
   card.classList.add("cards")
@@ -33,9 +33,16 @@ function card(pdp, avis, note) {
   image.src = pdp
   card.appendChild(image)
   //création de l'espace de note//
-  let ratio = document.createElement("div")
+  var ratio = document.createElement("div")
   ratio.classList.add("note")
   card.appendChild(ratio)
+  
+  for(let i=0; i<note ; i++){
+    console.log(ratio)
+    let star = document.createElement("img")
+    star.src = "img/avis.png"
+    ratio.appendChild(star)
+  }
   //espace commentaire//
   let comm = document.createElement("p")
   comm.classList.add("avis_client")
@@ -136,5 +143,5 @@ journal.addEventListener('click', () => {
 
 
 for (let i= 0; i < list_avis.length; i++) {
-  card(list_avis[i].pdp, list_avis[i].texte, list_avis[i].texte)
+  card(list_avis[i].pdp, list_avis[i].texte, list_avis[i].like)
 }
