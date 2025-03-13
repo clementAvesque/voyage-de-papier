@@ -59,6 +59,7 @@ body {
 
 section a button{
     margin-top: 10vh;
+    margin-bottom: 100px;
     height: 55px;
     width: 350px;
     font-family: Chonburi;
@@ -260,6 +261,12 @@ section div #desc{
     font-family: BioRhyme;
 }
 
+#commentaire{
+    height: 80vh;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    width: 100vw;
+}
 
 .journal_back {
     position: absolute;
