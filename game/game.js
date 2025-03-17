@@ -57,7 +57,7 @@ for (let i = 0; i < 6; i++) {
 
 }
 
-for(let i =0 ; i<12; i++){
+for(let i =1 ; i<13; i++){
     let button = document.createElement("button")
     button.id = i
     game.appendChild(button)
