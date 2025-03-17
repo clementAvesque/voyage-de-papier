@@ -1,0 +1,11 @@
+#aire_de_jeux{
+    height: 90vh;
+    width: 90vh;
+    background-color: blanchedalmond;
+}
+
+button{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+}

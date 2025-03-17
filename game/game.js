@@ -1,3 +1,5 @@
+let game =  document.getElementById("aire_de_jeux")
+
 class Paire {
     constructor(num1, num2, id) {
         this.tabPair = [num1, num2]; 
@@ -49,5 +51,18 @@ for (let i = 0; i < 6; i++) {
     console.log("valeur 2 :" + value2)
     console.log("taille du tableau:" + tableau.length)
     console.log(paire.allPair())
+    console.log(paire.id())
+    
 
+
+}
+
+for(let i =0 ; i<12; i++){
+    let button = document.createElement("button")
+    button.id = i
+    game.appendChild(button)
+    button.addEventListener("click",()=>{
+        console.log(i)
+        
+    })
 }
