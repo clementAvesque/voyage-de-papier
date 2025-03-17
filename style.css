@@ -132,7 +132,7 @@ section a button{
 }
 
 .cards{
-    height: 40vh;
+    height: 50vh;
     margin: 3vw;
     width: 20vw;
     background-color: grey;
@@ -178,6 +178,10 @@ section a button{
 ::-webkit-scrollbar-track {
 
     border-radius: 0;
+}
+
+#Year{
+    width: 100vw;
 }
 
 .Slider p{
@@ -332,6 +336,7 @@ section div #desc{
 }
 
 #commentaire{
+    overflow-y: hidden;
     height: 60vh;
     border-bottom: solid 1px;
     border-top: solid 1px;
